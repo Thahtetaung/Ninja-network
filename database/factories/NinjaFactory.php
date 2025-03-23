@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Ninja;
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
