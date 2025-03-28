@@ -2,10 +2,10 @@
     <h2>Currently Avaliable Ninjas</h2>
     
     <ul>
-       @foreach($ninjas as $ninja)
+       @foreach($Ninjas as $Ninja)
             <li>
-                <x-card href="/ninjas/{{$ninja['id']}}" :highlight="$ninja['skills'] > 70">
-                    <h3>{{$ninja["name"]}}</h3>
+                <x-card href="/ninjas/{{$Ninja['id']}}" :highlight="$Ninja['skills'] > 70">
+                    <h3>{{$Ninja["name"]}}</h3>
                 </x-card>
             </li>
        @endforeach
