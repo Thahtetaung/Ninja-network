@@ -6,12 +6,8 @@ use App\Http\Controllers\NinjaController;
 
 Route::get('/ninjas' ,[NinjaController::class , 'index'])->name('index');
 
-Route::get('/ninjas/create' ,function() {
-    return view('public.create');
-});
+Route::get('/ninjas/create' , [NinjaController::class , 'create'])->name('create');
 
-Route::get('/ninjas/{id}', function ($id){
+Route::get('/ninjas/{id}', [NinjaController::class , 'show'])->name('show');
 
-    return view('public.show', ["id" => $id]);
-});
 
